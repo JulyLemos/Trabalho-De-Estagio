@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #202444;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#logo {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#continuar {
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: white;
+    color: #202444;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.5s ease;
+    opacity: 0;
+    display: none;
+}
+
+#continuar:hover {
+    background-color: #f0f0f0;
+}
+
+#continuar.visible {
+    opacity: 1;
+    display: block;
+}
