@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husqvarna - Upload de Documentos</title>
+    <link rel="stylesheet" href="/static/cadastro.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu-icon" id="menuIcon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <a href="lar"><img src="/static/husqvarna_logo.png" alt="Husqvarna Logo" class="logo"></a>
+        <div class="profile-icon">
+            <a href="login"><i class="bi bi-person-circle"></i></a>
+        </div>
+    </header>
+
+    <nav id="sideMenu" class="side-menu">
+        <ul>
+            <li><a href="pre_cadastro">Pré-Cadastro</a></li>
+            <li><a href="cadastro">Cadastro</a></li>
+            <li><a href="#">Pedidos</a></li>
+            <li><a href="#">Configurações</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="upload-container">
+            <button class="import-btn">Importar pré-cadastro</button>
+            
+            <div class="upload-sections">
+                <div class="upload-item">
+                    <label>Contrato Social</label>
+                    <div class="upload-field">
+                        <input type="file" id="contratoSocial" class="file-input" accept=".pdf,.doc,.docx">
+                        <button class="upload-btn" onclick="document.getElementById('contratoSocial').click()">
+                            Carregar Arquivo
+                        </button>
+                        <span class="file-name" id="contratoSocialName"></span>
+                    </div>
+                </div>
+
+                <div class="upload-item">
+                    <label>Última alteração Contratual</label>
+                    <div class="upload-field">
+                        <input type="file" id="alteracaoContratual" class="file-input" accept=".pdf,.doc,.docx">
+                        <button class="upload-btn" onclick="document.getElementById('alteracaoContratual').click()">
+                            Carregar Arquivo
+                        </button>
+                        <span class="file-name" id="alteracaoContratualName"></span>
+                    </div>
+                </div>
+
+                <div class="upload-item">
+                    <label>Faturamento dos últimos 12 meses</label>
+                    <div class="upload-field">
+                        <input type="file" id="faturamento" class="file-input" accept=".pdf,.doc,.docx,.xls,.xlsx">
+                        <button class="upload-btn" onclick="document.getElementById('faturamento').click()">
+                            Carregar Arquivo
+                        </button>
+                        <span class="file-name" id="faturamentoName"></span>
+                    </div>
+                </div>
+
+                <div class="upload-item">
+                    <label>Balanço Patrimonial</label>
+                    <div class="upload-field">
+                        <input type="file" id="balanco" class="file-input" accept=".pdf,.doc,.docx,.xls,.xlsx">
+                        <button class="upload-btn" onclick="document.getElementById('balanco').click()">
+                            Carregar Arquivo
+                        </button>
+                        <span class="file-name" id="balancoName"></span>
+                    </div>
+                </div>
+
+                <div class="upload-item">
+                    <label>DRE dos últimos dois anos</label>
+                    <div class="upload-field">
+                        <input type="file" id="dre" class="file-input" accept=".pdf,.doc,.docx,.xls,.xlsx">
+                        <button class="upload-btn" onclick="document.getElementById('dre').click()">
+                            Carregar Arquivo
+                        </button>
+                        <span class="file-name" id="dreName"></span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="submit-btn">Enviar para Análise de Crédito</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Todos direitos reservados</p>
+    </footer>
+
+    <script src="/static/menu.js"></script>
+</body>
+</html>

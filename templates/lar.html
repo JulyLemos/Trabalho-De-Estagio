@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Husqvarna Login</title>
-    <link rel="stylesheet" href="/static/login.css">
+    <title>Husqvarna - Produtos</title>
+    <link rel="stylesheet" href="/static/lar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
@@ -14,26 +14,134 @@
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
-        <img src="/static/husqvarna_logo.png" alt="Husqvarna Logo" class="logo">
+        <a href="lar"><img src="/static/husqvarna_logo.png" alt="Husqvarna Logo" class="logo"></a>
         <div class="profile-icon">
-            <a href="login.html"><i class="bi bi-person-circle"></i></a>
+            <a href="login"><i class="bi bi-person-circle"></i></a>
         </div>
     </header>
 
     <nav id="sideMenu" class="side-menu">
         <ul>
-            <li><a href="#">Pré-Cadastro</a></li>
-            <li><a href="#">Cadastro</a></li>
+            <li><a href="pre_cadastro">Pré-Cadastro</a></li>
+            <li><a href="cadastro">Cadastro</a></li>
             <li><a href="#">Pedidos</a></li>
             <li><a href="#">Configurações</a></li>
         </ul>
     </nav>
 
+    <div class="content-wrapper">
+        <aside class="filters">
+            <h2>Filtros</h2>
+            
+            <div class="filter-section">
+                <h3>Materiais</h3>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="material" value="ferro">
+                    <span class="checkmark"></span>
+                    Ferro
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="material" value="aco">
+                    <span class="checkmark"></span>
+                    Aço
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="material" value="linha-ferrea">
+                    <span class="checkmark"></span>
+                    Linha Férrea
+                </label>
+            </div>
+
+            <div class="filter-section">
+                <h3>Aferrecimento</h3>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="aferrecimento" value="umido">
+                    <span class="checkmark"></span>
+                    Úmido
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="aferrecimento" value="umido-seco">
+                    <span class="checkmark"></span>
+                    Úmido/Seco
+                </label>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Produtos</h1>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="badge gold">OURO</div>
+                    <img src="/static/c1000.jpeg" alt="ELITE-WIRE™ C1000" class="product-image">
+                    <div class="product-info">
+                        <h3>ELITE-WIRE™ C1000</h3>
+                        <div class="specs">
+                            <p><strong>Refrigeração:</strong> Úmido/Seco</p>
+                            <p><strong>Número de pérolas:</strong> 44</p>
+                            <p><strong>Diâmetro das pérolas:</strong> 10.3 mm</p>
+                            <p><strong>Montagem:</strong> Springs + rubber, vacuum brazed</p>
+                        </div>
+                        <button class="add-btn">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge gold">OURO</div>
+                    <div class="new-badge">NOVO</div>
+                    <img src="/static/c950.jpeg" alt="ELITE-WIRE™ C950" class="product-image">
+                    <div class="product-info">
+                        <h3>ELITE-WIRE™ C950</h3>
+                        <div class="specs">
+                            <p><strong>Refrigeração:</strong> Úmido/Seco</p>
+                            <p><strong>Número de pérolas:</strong> 40</p>
+                            <p><strong>Diâmetro das pérolas:</strong> 10.3 mm</p>
+                            <p><strong>Montagem:</strong> Springs + rubber, vacuum brazed</p>
+                        </div>
+                        <button class="add-btn">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge gold">OURO</div>
+                    <img src="/static/c888.jpeg" alt="ELITE-WIRE™ C888" class="product-image">
+                    <div class="product-info">
+                        <h3>ELITE-WIRE™ C888</h3>
+                        <div class="specs">
+                            <p><strong>Refrigeração:</strong> Úmido</p>
+                            <p><strong>Número de pérolas:</strong> 40</p>
+                            <p><strong>Diâmetro das pérolas:</strong> 11 mm</p>
+                            <p><strong>Montagem:</strong> Spring + rubber, hybrid beads</p>
+                        </div>
+                        <br>
+                        <button class="add-btn">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge silver">PRATA</div>
+                    <img src="/static/c750.jpeg" alt="VARI-WIRE C750EM" class="product-image">
+                    <div class="product-info">
+                        <h3>VARI-WIRE C750EM</h3>
+                        <div class="specs">
+                            <p><strong>Refrigeração:</strong> Úmido</p>
+                            <p><strong>Número de pérolas:</strong> 40</p>
+                            <p><strong>Diâmetro das pérolas:</strong> 11 mm</p>
+                            <p><strong>Montagem:</strong> Rubber + springs</p>
+                        </div>
+                        <br>
+                        <button class="add-btn">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 
     <footer>
         <p>Todos direitos reservados</p>
     </footer>
 
     <script src="/static/menu.js"></script>
+    <script src="/static/lar.js"></script>
 </body>
 </html>
